@@ -1,0 +1,22 @@
+body{background-color:#AC7FC4;font-family: 'Shippori Antique', sans-serif;padding: 15px}body::before{content:color:white;opacity:.2;font-size:5px;position:absolute;bottom:25px;left:calc(50vw - 22px);} a{text-decoration:none;}
+@keyframes leaves {0% {transform: scale(1);} 100% {transform: scale(.90);}} .image .degdeg{animation: leaves 1s ease-in-out infinite alternate;-webkit-animation: leaves 1s ease-in-out infinite alternate;}
+.button:hover, #subkonten > * label:hover{opacity:.4;}
+#fotoloveu, #ftawal{opacity:0;text-align:center;width:100%;height:100px;transition:all 1s ease;}
+#fotoloveu > *, #ftawal > *{display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-weight:700;font-size:15px;color:white} #sp2{font-size:17px;}
+#fotoloveu img, #ftawal img{transition:all .3s ease;}
+#tombWA{position:relative;margin-top:30px;opacity:0;visibility:hidden;transition:all .5s ease;display:flex;justify-content:center;align-items:center;list-style:none}
+.icon{flex-shrink:0; display:inline-block;margin-right:8px; width:18px;height:18px; background-size:cover;background-repeat:no-repeat;background-position:center}
+.icon.whatsapp{background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23fefefe'><g><path d='M16,2A13,13,0,0,0,8,25.23V29a1,1,0,0,0,.51.87A1,1,0,0,0,9,30a1,1,0,0,0,.51-.14l3.65-2.19A12.64,12.64,0,0,0,16,28,13,13,0,0,0,16,2Zm0,24a11.13,11.13,0,0,1-2.76-.36,1,1,0,0,0-.76.11L10,27.23v-2.5a1,1,0,0,0-.42-.81A11,11,0,1,1,16,26Z'/><path d='M19.86,15.18a1.9,1.9,0,0,0-2.64,0l-.09.09-1.4-1.4.09-.09a1.86,1.86,0,0,0,0-2.64L14.23,9.55a1.9,1.9,0,0,0-2.64,0l-.8.79a3.56,3.56,0,0,0-.5,3.76,10.64,10.64,0,0,0,2.62,4A8.7,8.7,0,0,0,18.56,21a2.92,2.92,0,0,0,2.1-.79l.79-.8a1.86,1.86,0,0,0,0-2.64Zm-.62,3.61c-.57.58-2.78,0-4.92-2.11a8.88,8.88,0,0,1-2.13-3.21c-.26-.79-.25-1.44,0-1.71l.7-.7,1.4,1.4-.7.7a1,1,0,0,0,0,1.41l2.82,2.82a1,1,0,0,0,1.41,0l.7-.7,1.4,1.4Z'/></g></svg>")}
+.button{margin-top:100px;transition:all .2s ease;display:inline-flex;align-items:center;padding:10px 15px;outline:0;border:0; border-radius:15px;line-height:20px; color:#fefefe; background:#008418; font-size:13px;white-space:nowrap;overflow:hidden;max-width:100%}
+
+#konten{z-index:3;position:relative;top:-50px;transition:all 1s ease;}
+#subkonten{opacity:0;transition:all 1s ease;}
+
+.catatan{position:relative;padding:16px 20px 16px 40px; background:#E8F7FE;color:#3c4043; font-size:.90rem;line-height:1.6em;border-radius:10px;overflow:hidden}
+.catatan::before{content:'';width:50px;height:50px;background:#81b4dc;display:block;border-radius:50%;position:absolute;top:-12px;left:-12px;opacity:.1} 
+.catatan::after{content:'\002A';font-family: sans-serif;position:absolute;left:8px;top:8px; font-size:16px; min-width:15px;text-align:center} 
+.catatan.sek{background:rgba(0, 0, 0, .8);color:#EAEAEA} 
+.catatan.sek::before{background:rgba(0, 0, 0, 1)} .catatan.sek::after{content:attr(data-text); /*content:'\0021'*/}
+
+.fa-heart {opacity:.6;color:#C600FF;font-size: 30px;position: absolute;animation:  heartMove linear 1;top: -10vh;z-index: 0;}
+@keyframes heartMove {0%{transform: translateY(-10vh) ;} 100%{transform: translateY(100vh) ;}}
