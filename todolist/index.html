@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="refresh" content="text/html;charset=UTF-8" />
+    <title>Notic Me</title>
+    <link rel="stylesheet" href="style.css" title="style" />
+</head>
+<body>
+    <!-- Background Image -->
+    <section class="Background">
+
+    </section>
+    <section id="emote">
+    </section>
+    <!-- Loading Masuk -->
+    <section id="first-page">
+
+    </section>
+    <section id="halamanpertama">
+
+        <div class="semuainfo">
+            <div class="gantitema">
+                <div class="temahitam">
+
+                </div>
+                <div class="temaputih">
+
+                </div>
+            </div>
+            <span class="sudahdanexp">
+                <p class="tanggal"></p>
+                <div class="tugasyangsudahdikerjakan">
+                    <p>
+                        Besok
+                    </p>
+                    <p class="jumlah besok">
+                        0
+                    </p>
+                </div>
+                <div class="tugasyangdihapus">
+                    <p>
+                        Expired
+                    </p>
+                    <p class="jumlah expired">
+                        0
+                    </p>
+                </div>
+            </span>
+            <div class="tugasyangbelumdikerjakan">
+                <p>
+                    Hari ini
+                </p>
+                <p class="jumlah hariini">
+                    0
+                </p>
+                <button class="hapusexpired" type="button"><p>
+                    Hapus Expired
+                </p>
+                </button>
+            </div>
+        </div>
+        <!-- Tugas -->
+        <div class="tugas">
+            <p class="tidakadarencana">
+                Tidak ada rencana
+            </p>
+        </div>
+        <div class="tombolbuatdanlihat">
+            <button class="Buatrencana" type="button">Buat Rencana</button>
+            <button class="Lihatrencana"type="button">Lihat Semua</button>
+        </div>
+    </section>
+
+    <!-- Buat Rencana -->
+    <div id="buatRencana">
+        <form method="get" accept-charset="utf-8" class="mulaibuat">
+            <input type="text" name="judul" id="judul" placeholder="Judul Rencana" maxlength="20" />
+            <textarea name="deskripsi" id=deskripsi placeholder="Deskripsi Rencana"></textarea>
+            <input type="date" name="tanggal" id="tanggal" data-placeholder="Tanggal" required aria-required="true" />
+            <input type="time" name="waktu" id="waktu" data-placeholder="Jam" required aria-required="true" />
+            <select name="tipe" id="tipe">
+                <option>
+                    Tipe Rencana
+                </option>
+                <option>
+                    Belajar
+                </option>
+                <option>
+                    Bekerja
+                </option>
+                <option>
+                    Jalan - Jalan
+                </option>
+                <option>
+                    Main Game
+                </option>
+                <option>
+                    Menghadiri Acara
+                </option>
+                <option>
+                    Mengerjakan Tugas
+                </option>
+            </select>
+            <div class="button">
+                <button class="Buat" type="reset">Buat</button>
+                <button class="Batal" type="reset">Batal</button>
+            </div>
+        </form>
+    </div>
+    <!-- Lihat Detail Rencana -->
+    <section id="Detailrencana">
+        <div class="detailrencana">
+            <h2 class="judulrencana"></h2>
+            <div class="container">
+                <div class="gambarkategori">
+
+                </div>
+            </div>
+            <p class="waktumulai"></p>
+            <p class="deskripsirencana"></p>
+            <button class="kembali"type="button">Kembali</button>
+            <button class="hapusrencana"type="button">Hapus</button>
+        </div>
+    </section>
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

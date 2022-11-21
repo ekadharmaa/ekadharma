@@ -1,0 +1,446 @@
+html {
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.Background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: black;
+}
+.gantitema {
+    width: 50px;
+    height: 50px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: 999;
+}
+.temahitam, .temaputih {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    border-radius: 3px 25px 3px 25px;
+}
+.Black {
+    background-color: black;
+    animation: black .5s Linear;
+}
+.White {
+    background-color: white;
+    animation: white .5s Linear;
+}
+.transisi {
+    animation: transisi .3s Linear;
+}
+@keyframes black {
+    0% {
+        background-color: rgba(255,255,255,1);
+    }
+}
+@keyframes white {
+    0% {
+        background-color: rgba(0,0,0,1);
+    }
+}
+@keyframes transisi {
+    100% {
+        background-color: transparent;
+        transform: scale(75);
+    }
+}
+.animation {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 150px;
+    border-radius: 60px 15px 60px 15px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: none;
+    transition: 7s;
+
+}
+.emote {
+    display: inline-block;
+    font-size: 6rem;
+    width: 100%;
+}
+#emote {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+}
+#halamanpertama {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    color: white;
+    overflow: hidden;
+}
+/*@media (max-width:420px) {*/
+.semuainfo {
+    width: 90%;
+    background-color: rgba(255,255,255,.05);
+    position: relative;
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 3;
+    margin: 80px auto;
+    border-radius: 100px 30px 100px 30px;
+    box-sizing: border-box;
+    padding: 30px;
+    justify-content: space-around;
+}
+.temaputih {
+    background-color: rgba(100,149,237,1);
+}
+.tugasyangbelumdikerjakan {
+    width: 40%;
+    height: 85%;
+    margin-top: 25px;
+    display: flex;
+    background-color: rgba(255,255,255,.05);
+    border-radius: 30px;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+.tanggal {
+    font-size: 1.7rem;
+    margin: 0 0 15px 0;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,.05);
+}
+.sudahdanexp {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    align-items: center;
+    border-radius: 30px;
+}
+.tugasyangsudahdikerjakan, .tugasyangdihapus {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgba(255,255,255,.05);
+    box-sizing: border-box;
+
+}
+.sudahdanexp .tugasyangsudahdikerjakan .jumlah, .sudahdanexp .tugasyangdihapus .jumlah {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: auto;
+}
+.semuainfo .tugasyangbelumdikerjakan p, .sudahdanexp .tugasyangsudahdikerjakan p, .sudahdanexp .tugasyangdihapus p {
+    text-align: center;
+    margin: 1% 0;
+    font-size: 2rem;
+}
+.semuainfo .tugasyangbelumdikerjakan .jumlah {
+    margin: 5px auto;
+    width: 100%;
+    font-size: 10rem;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+}
+
+/*Rencana*/
+.tugas {
+    width: 90%;
+    height: 50%;
+    position: relative;
+    background-color: rgba(255,255,255,.05);
+    backdrop-filter: blur(4px);
+    margin: 50px auto;
+    border-radius: 30px 70px 30px 70px;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.semuatugas {
+    width: 90%;
+    height: 150px;
+    display: flex;
+    margin: 28px auto;
+    line-height: 280%;
+    border-radius: 30px 80px 30px 30px;
+    background-color: rgba(255,255,255,.2);
+}
+.tombolbuatdanlihat {
+    z-index: 3;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+}
+.Buatrencana, .Lihatrencana {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    border: 0;
+    font-size: 2rem;
+    background-color: rgba(255,255,255,.05);
+    border-radius: 40px;
+    margin: 0 auto;
+    color: white;
+
+}
+.hapusexpired {
+    border: 0;
+    height: 120px;
+    margin-top: 10px;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 20px 55px 20px 40px;
+    color: white;
+}
+.image {
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0 0 30px;
+}
+/* Form Buat Rencana*/
+.tidakadarencana {
+    margin-top: -5px;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 200px;
+}
+#buatRencana {
+    display: none;
+    position: absolute;
+    width: 100%;
+
+}
+.mulaibuat {
+    width: 80%;
+    margin: 100px auto;
+    background-color: rgba(255,255,255,.05);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 30px 10px 30px 10px;
+    z-index: 2;
+}
+#judul:focus {
+    outline: none;
+}
+#deskripsi:focus {
+    outline: none;
+}
+#tipe:focus {
+    outline: none;
+}
+#tanggal:focus {
+    outline: none;
+}
+#waktu:focus {
+    outline: none;
+}
+select, input {
+    appearance: none;
+}
+input[type="date"]::before {
+    content: attr(data-placeholder);
+    color: white;
+    width: 100%;
+}
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+    display: none
+}
+
+input[type="time"]::before {
+    content: attr(data-placeholder);
+    color: white;
+    width: 100%;
+}
+input[type="time"]:focus::before,
+input[type="time"]:valid::before {
+    display: none
+}
+#judul::-webkit-input-placeholder {
+    color: white;
+}
+#deskripsi::-webkit-input-placeholder {
+    color: white;
+}
+#deskripsi {
+    resize: none;
+    height: 200px;
+}
+#judul, #deskripsi, #tipe, #tanggal, #waktu {
+    width: 80%;
+    padding: 40px;
+    margin: auto;
+    border: 0;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,.2);
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+
+}
+#judul {
+    height: 100px;
+}
+#deskripsi {
+    height: 550px;
+}
+#waktu, #tanggal {
+    height: 80px;
+}
+#tipe {
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    height: 80px;
+    color: white;
+}
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.Buat, .Batal, .hapusrencana, .kembali {
+    width: 30%;
+    height: 80px;
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 25px;
+    margin-top: 20px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.2);
+    color: white;
+
+}
+.juduldantanggal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.juduldantanggal h3 {
+    font-size: 2.5rem;
+}
+.juduldantanggal p {
+    font-size: 2rem;
+}
+.juduldantanggal h3, .juduldantanggal p {
+    margin: 0;
+}
+/* Lihat Detail Rencana */
+
+#Detailrencana {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+.detailrencana {
+    width: 80%;
+    margin: 300px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgba(255,255,255,.05);
+    color: white;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 90px 30px 90px 30px;
+    z-index: 4;
+}
+.judulrencana {
+    font-size: 3.5rem;
+}
+.container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
+.gambarkategori {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.gambarkategori svg {
+    width: 100%;
+    height: 100%;
+}
+.waktumulai {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+.deskripsirencana {
+    width: 90%;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+/*@media (min-width: 420px){
+  #halamanpertama {
+    display: none;
+  }
+  body {
+    display: flex;
+  }
+  .Background::before {
+    content: "HANYA SUPPORT UNTUK TAMPILAN MODE SMARTPHONE";
+    position: absolute;
+    background-color: rgba(255,255,255,0);
+    font-size: 4rem;
+    margin-top: 50%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+  }
+}*/
